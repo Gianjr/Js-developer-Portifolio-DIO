@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    font-family: "open sams", sans-serif;
+}
+@font-face {
+    font-family: 'NeueMachina-Regular';
+    src: url(/assets/fonts/neue-machina-free-for-personal-use/Neue\ Machina\ -\ Free\ for\ Personal\ Use/NeueMachina-Regular.otf);
+}
+
+body{
+    background-color: black;
+    color: #fff;
+}
+
+.main {
+    margin: 2rem auto; 
+    padding: 2rem;
+    border: 1px solid #fff;
+    border-radius: .9rem;
+    max-width: 90vw;
+ 
+}
+
+
+.main::before{
+    content: "";
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.logo-img{
+    width: 100vw;
+    height: 80vh;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;    
+}
+
+.imagem-rodape{
+     width: 100vw;
+    height: 80vh;
+    display: inline-block;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    z-index: -1;    
+}

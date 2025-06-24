@@ -1,0 +1,87 @@
+header{
+    display: flex;
+    flex-direction: column;   
+}
+
+header .foto{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}   
+
+h1{
+    
+    font-family: 'NeueMachina';
+    font-size: 1.5rem;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.information p{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     margin: .3rem;
+}
+
+p{
+    font-size: 14px;
+}
+
+.information p::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+   background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.information a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+ .information .função::before {
+    background-image: url(/assets/icons/função.svg);
+ }
+
+ .information .localização::before {
+    background-image: url(/assets/icons/localização.svg);
+ }
+
+ .information .telefone::before {
+    background-image: url(/assets/icons/telefone.svg);
+ }
+
+ .information .email::before {
+    background-image: url(/assets/icons/email.svg);
+ }
+
+ @media only screen and (min-width: 768px){
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "foto title"
+        "foto information";
+    }
+
+    .header .foto{
+        grid-area: foto;
+    }
+
+    .header .title{
+        grid-area: title;
+    }
+
+    .header .information{
+        grid-area: information;
+    }
+ }
